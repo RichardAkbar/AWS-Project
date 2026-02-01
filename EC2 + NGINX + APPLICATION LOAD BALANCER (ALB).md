@@ -22,53 +22,53 @@ Create Security Group
 → Register EC2 ke Target Group
 → Akses via DNS ALB
 Membuat security group
-~~~
+
 ![alt text](image.png)
-~~~
+
 2. Create EC2 (datacenter-ec2)
 
 Network & Security
-~~~
+
 ![alt text](image-1.png)
-~~~
+
 
 User Data Script
-~~~
+
 ![alt text](image-2.png)
-~~~
+
 
 3. Step 3 — Create Target Group
-~~~
+
 ![alt text](image-3.png)
-~~~
+
 
 Register Target
 
 Tambahkan:
 
 datacenter-ec2
-~~~
+
 ![alt text](image-4.png)
-~~~
+
 1. Create Application Load Balancer
-~~~
+
 ![alt text](image-5.png)
-~~~
+
 
 Listener
 HTTP : 80 → Forward to datacenter-tg
-~~~
+
 ![alt text](image-6.png)
-~~~
+
 
 5. Security Group Final Check
 
 Security Group ALB
 
 Inbound: HTTP 80 from 0.0.0.0/0
-~~~
+
 ![alt text](image-7.png)
-~~~
+
 
 Security Group EC2
 Inbound: HTTP 80 from ALB security group
@@ -76,28 +76,28 @@ Inbound: HTTP 80 from ALB security group
 
 Jangan buka EC2 ke 0.0.0.0/0
 Cukup dari ALB saja
-~~~
+
 ![alt text](image-8.png)
-~~~
+
 
 6. Verifikasi (FINAL TEST)
 
 A. Ambil ALB DNS
 
 EC2 → Load Balancers → datacenter-alb
-~~~
+
 
 ![alt text](image-9.png)
 
-~~~
+
 
 muncul:
 
 Welcome to nginx!
-~~~
+
 
 ![alt text](image-10.png)
-~~~
+
 
 
 Di production, user TIDAK PERNAH akses EC2 langsung.
