@@ -21,23 +21,30 @@ Create Security Group
 → Attach ALB to Target Group
 → Register EC2 ke Target Group
 → Akses via DNS ALB
+
 Membuat security group
+
 
 ![alt text](image.png)
 
+
 2. Create EC2 (datacenter-ec2)
 
+
 Network & Security
+
 
 ![alt text](image-1.png)
 
 
 User Data Script
 
+
 ![alt text](image-2.png)
 
 
 3. Step 3 — Create Target Group
+
 
 ![alt text](image-3.png)
 
@@ -48,9 +55,12 @@ Tambahkan:
 
 datacenter-ec2
 
+
 ![alt text](image-4.png)
 
+
 1. Create Application Load Balancer
+
 
 ![alt text](image-5.png)
 
