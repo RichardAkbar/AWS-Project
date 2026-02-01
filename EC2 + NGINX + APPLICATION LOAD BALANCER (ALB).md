@@ -86,15 +86,19 @@ A. Ambil ALB DNS
 
 EC2 → Load Balancers → datacenter-alb
 ~~~
+
 ![alt text](image-9.png)
+
 ~~~
 
 muncul:
 
 Welcome to nginx!
 ~~~
+
 ![alt text](image-10.png)
 ~~~
+
 
 Di production, user TIDAK PERNAH akses EC2 langsung.
 Semua lewat Load Balancer
